@@ -1,0 +1,305 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body,
+        html {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        img {
+            display: block;
+            border: none;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 112px;
+            width: 64px;
+            height: 64px;
+            z-index: 2;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .atf-image {
+            width: 100%;
+            height: 100vh;
+            object-position: bottom;
+        }
+
+        .main-container {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 600px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        .menu-bar {
+            position: absolute;
+            top: 64px;
+            right: 200px;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 64px;
+            font-size: 24px;
+        }
+
+        .menu-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .phone-button {
+            display: flex;
+            align-items: center;
+            background-color: #9F0908;
+            border: 1px solid white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            gap: 8px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .phone-img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .container-1 {
+            padding: 120px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .how-to-order {
+            font-family: 'Raleway', sans-serif;
+            color: #9F0908;
+            font-size: 80px;
+            margin-bottom: 64px;
+        }
+
+        .container-order {
+            display: flex;
+            gap: 150px;
+        }
+
+        .order-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 260px;
+        }
+
+        .order-step img {
+            width: 128px;
+            margin-bottom: 16px;
+        }
+
+        .order-step p {
+            font-family: 'Economica', sans-serif;
+            font-size: 56px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu-section {
+            position: relative;
+            background-image: url('./img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 80px;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            font-size: 80px;
+            color: #9F0908;
+            margin-bottom: 64px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 56px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .menu-item img {
+            width: 352px;
+            height: 352px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-text {
+            flex: 1;
+            padding: 0 32px;
+            text-align: left;
+        }
+
+        .menu-text h3 {
+            font-family: 'Economica', sans-serif;
+            font-size: 56px;
+            margin: 0 0 16px;
+        }
+
+        .menu-text table {
+            font-size: 32px;
+            width: 600px;
+            border-spacing: 0 8px;
+        }
+
+        .menu-text td:first-child {
+            text-align: left;
+        }
+
+        .menu-text td:last-child {
+            text-align: right;
+        }
+
+        .find-us {
+            text-align: center;
+            background: white;
+            padding-bottom: 120px;
+            padding-top: 120px;
+        }
+
+        .find-us h2 {
+            font-size: 80px;
+            color: #9F0908;
+            margin-bottom: 8px;
+        }
+
+        .find-us p {
+            font-size: 24px;
+            margin-bottom: 64px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        /* === FOOTER === */
+        footer.footer {
+            background-color: #0D0D0D;
+            height: 144px;
+            padding: 0 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .footer-logo {
+            height: 44px;
+            width: 44px;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-right a {
+            margin-left: 16px;
+        }
+
+        .footer-right img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media screen and (max-width: 1050px) {
+
+            .atf-image {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .menu-bar {
+                display: none;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .main-container {
+                font-size: 24px;
+            }
+
+            .container-order {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-item {
+                flex-direction: column !important;
+                align-items: center;
+                text-align: center;
+            }
+
+            .menu-text {
+                padding: 0;
+                text-align: center;
+            }
+
+            .menu-text table {
+                width: 100%;
+                font-size: clamp(16px, 3vw, 32px);
+            }
+
+            .menu-text td {
+                padding: 4px 8px;
+            }
+
+            .container-1 {
+                text-align: center;
+            }
+        }
