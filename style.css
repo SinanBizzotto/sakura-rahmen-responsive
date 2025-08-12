@@ -72,9 +72,16 @@ img {
     font-size: 24px;
 }
 
+
 .menu-bar a {
     color: white;
     text-decoration: none;
+    margin: 0;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
 }
 
 .menu-bar a:hover {
@@ -95,6 +102,7 @@ img {
 .phone-img {
     width: 16px;
     height: 16px;
+    display: inline-block;
 }
 
 .container-1 {
@@ -200,12 +208,15 @@ img {
 .menu-table td:last-child {
     text-align: right;
     color: #675E54;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .find-us {
     text-align: center;
     background: white;
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .find-us h2 {
@@ -354,7 +365,12 @@ footer.footer {
     }
 
     h1 {
-        font-size: 44px;
+        white-space: nowrap;
+        margin: 0;
+        text-align: center;
+        font-size: 44px !important;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     h2 {
@@ -371,6 +387,10 @@ footer.footer {
     footer.footer {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .main-container p {
+        font-size: 16px !important;
     }
 
     .logo-container {
