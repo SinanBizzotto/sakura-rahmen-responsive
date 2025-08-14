@@ -314,6 +314,35 @@ footer.footer {
     height: 40px
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .menu-links {
+        display: none;
+    }
+
+    .menu-section {
+        padding: 96px 16px;
+    }
+
+    .menu-section .menu-item {
+        gap: 24px;
+        max-width: none;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .menu-section .menu-item img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .menu-section .menu-text {
+        flex: 1 1 auto;
+        max-width: none;
+        min-width: 0;
+    }
+}
+
 /* Tablet & Desktop (>=767px) */
 @media (min-width:767px) {
     .logo-container {
@@ -322,8 +351,24 @@ footer.footer {
         height: 64px
     }
 
-    .menu-links {
-        display: flex
+    .menu-bar {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        font-size: 24px;
+    }
+
+    .phone-button {
+        font-size: 20px;
+        padding: 8px 16px;
+        gap: 12px;
+    }
+
+    .container-order {
+        flex-wrap: nowrap;
     }
 
     .menu-item {
@@ -332,8 +377,9 @@ footer.footer {
     }
 
     .menu-item img {
-        width: 352px;
-        height: 352px
+        width: 351px;
+        height: 351px;
+        position: relative;
     }
 
     .menu-text {
@@ -345,7 +391,55 @@ footer.footer {
     }
 
     .map-wrap {
-        height: 600px
+        height: 600px;
+        padding-top: 24px;
+    }
+}
+
+@media (max-width: 766px) {
+    .main-container {
+        padding: 0 4px;
+    }
+
+    .main-container h1 {
+        font-size: 44px;
+        white-space: nowrap;
+        letter-spacing: -2px;
+        transform: scaleX(0.9);
+        transform-origin: center;
+    }
+
+    .find-us__head {
+        padding: 72px 16px 0;
+        text-align: center;
+    }
+
+    .find-us__head h2 {
+        font-size: 40px;
+        font-weight: 800;
+        margin: 0 0 8px;
+    }
+
+    /* KORRIGIERT: Icon + Adresse in einer Reihe, lesbar */
+    .address-line {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 16px;
+        margin: 0 0 40px;
+        padding: 0 16px;
+        white-space: nowrap;
+    }
+
+    .address-line img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .address-line span {
+        font-size: clamp(15px, 4.3vw, 16px);
+        white-space: nowrap;
     }
 }
 
@@ -355,6 +449,11 @@ footer.footer {
     html,
     body {
         font-size: 16px
+    }
+
+    .main-container h1 {
+        font-size: 44px;
+        white-space: nowrap;
     }
 
     h2 {
@@ -463,12 +562,9 @@ footer.footer {
         font-size: 20px
     }
 
-    .find-us head {
+    /* KORRIGIERT: Tippfehler in Selektor */
+    .find-us__head {
         padding: 72px 16px 8px
-    }
-
-    .address-line {
-        font-size: 16px
     }
 
     .map-wrap {
