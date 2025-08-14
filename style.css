@@ -1,43 +1,54 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 html,
 body {
     font-family: 'Raleway', sans-serif;
-    color: #000000;
+    color: #000;
+    overflow-x: hidden
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #9F0908;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 16px
 }
 
 img {
     display: block;
-    border: none;
+    border: 0
 }
 
+/* Logo */
 .logo-container {
     position: absolute;
     top: 20px;
     left: 112px;
     width: 64px;
     height: 64px;
-    z-index: 2;
+    z-index: 2
 }
 
 .logo-container img {
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
+/* Hero */
 .atf-image {
     width: 100%;
     height: 100vh;
     object-position: bottom;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .main-container {
@@ -45,23 +56,25 @@ img {
     top: 0;
     width: 100%;
     height: 600px;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center
 }
 
 .main-container h1 {
     font-size: 72px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: .5px
 }
 
 .main-container p {
-    font-size: 20px;
+    font-size: 20px
 }
 
+/* Top Nav */
 .menu-bar {
     position: absolute;
     top: 64px;
@@ -69,88 +82,94 @@ img {
     display: flex;
     align-items: center;
     gap: 64px;
-    font-size: 24px;
-}
-
-
-.menu-bar a {
-    color: white;
-    text-decoration: none;
-    margin: 0;
+    font-size: 24px
 }
 
 .menu-links {
     display: flex;
-    gap: 40px;
+    gap: 40px
+}
+
+.menu-bar a {
+    color: #fff;
+    text-decoration: none
 }
 
 .menu-bar a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .phone-button {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: #9F0908;
-    border: 1px solid white;
+    background: #9F0908;
+    border: 1px solid #fff;
     padding: 8px 12px;
     border-radius: 5px;
-    color: white;
+    color: #fff
 }
 
 .phone-img {
     width: 16px;
-    height: 16px;
-    display: inline-block;
+    height: 16px
 }
 
+/* How to order */
 .container-1 {
     padding: 120px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .how-to-order {
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 800;
     color: #9F0908;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+    text-align: center
 }
 
 .container-order {
     display: flex;
-    gap: 150px;
     justify-content: center;
+    align-items: center;
+    gap: 80px 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 120px;
+    flex-wrap: wrap
 }
 
 .order-step {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 260px;
+    width: 220px
 }
 
 .order-step img {
     width: 112px;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .order-step p {
     font-family: 'Economica', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 32px;
-    text-align: center;
+    text-align: center
 }
 
+/* Menu */
 .menu-section {
     position: relative;
     background-image: url('./img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 120px 80px;
+    padding: 120px 80px
 }
 
 .menu-section h2 {
@@ -158,92 +177,117 @@ img {
     font-size: 64px;
     color: #9F0908;
     margin-bottom: 64px;
+    font-weight: 800
 }
 
 .menu-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 56px;
     margin-bottom: 56px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
-.menu-item:nth-child(even) {
-    flex-direction: row-reverse;
+.menu-section .menu-item:nth-of-type(even) {
+    flex-direction: row-reverse
 }
 
 .menu-item img {
     object-fit: cover;
     border-radius: 8px;
     width: 352px;
-    height: 352px;
+    height: 352px
 }
 
 .menu-text {
-    flex: 1;
-    padding: 0 32px;
-    text-align: left;
+    flex: 0 0 352px;
+    max-width: 352px;
+    text-align: left
 }
 
 .menu-text h3 {
     font-family: 'Economica', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 32px;
-    margin: 0 0 16px;
+    margin: 0 0 16px
 }
 
 .menu-table {
-    width: 100%;
-    border-spacing: 0 8px;
+    width: 100%
 }
 
 .menu-table td:first-child {
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 24px
 }
 
 .menu-table td:last-child {
     text-align: right;
     color: #675E54;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 24px
 }
 
+/* Find us (centered head, iframe full-bleed) */
 .find-us {
+    padding: 0;
+    margin: 0;
+    background: #fff
+}
+
+.find-us__head {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 80px 8px;
     text-align: center;
-    background: white;
-    padding-bottom: 120px;
-    padding-top: 120px;
 }
 
-.find-us h2 {
-    font-size: 64px;
-    color: #9F0908;
-    margin-bottom: 8px;
+.find-us__head h2 {
+    text-align: center;
+    margin: 0;
 }
 
-.find-us p {
+.address-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-size: 20px;
-    margin-bottom: 64px;
+    color: #000
 }
 
-iframe {
+.address-line img {
+    width: 20px;
+    height: 20px
+}
+
+.map-wrap {
     width: 100%;
-    height: 450px;
-    border: 0;
+    height: 600px;
+    margin: 0;
+    padding: 0;
 }
 
+.map-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
 footer.footer {
-    background-color: #0A141E;
+    background: #0A141E;
     height: 144px;
     padding: 0 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #fff
 }
 
 .footer-left {
@@ -251,281 +295,202 @@ footer.footer {
     align-items: center;
     gap: 16px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .footer-logo {
     width: 44px;
-    height: 44px;
+    height: 44px
 }
 
 .footer-right {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 16px
 }
 
 .footer-right img {
     width: 40px;
-    height: 40px;
+    height: 40px
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-
-    html,
-    body {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 72px;
-    }
-
-    h2 {
-        font-size: 64px;
-    }
-
-    h3 {
-        font-size: 32px;
-    }
-
-    .container-1,
-    .menu-section,
-    .find-us,
-    footer.footer {
-        padding-left: 24px;
-        padding-right: 24px;
+/* Tablet & Desktop (>=767px) */
+@media (min-width:767px) {
+    .logo-container {
+        left: 112px;
+        width: 64px;
+        height: 64px
     }
 
     .menu-links {
-        display: none;
+        display: flex
     }
 
-    .menu-bar {
-        position: absolute;
-        top: 40px;
-        right: 24px;
-        gap: 24px;
-        font-size: 20px;
+    .menu-item {
+        gap: 56px;
+        max-width: 1000px
     }
 
     .menu-item img {
         width: 352px;
-        height: 352px;
+        height: 352px
     }
 
-    .logo-container {
-        left: 24px;
-        width: 64px;
-        height: 64px;
+    .menu-text {
+        flex: 0 0 352px
     }
 
-    .container-order {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        max-width: 100%;
-        overflow-x: hidden;
-        padding-top: 96px;
+    .find-us__head {
+        padding: 120px 80px 8px
     }
 
-    .find-us h2 {
-        font-size: 64px;
-        padding-top: 96px;
+    .map-wrap {
+        height: 600px
     }
-
-    .how-to-order {
-        padding-bottom: 96px;
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-
-    .find-us {
-        padding: 0px;
-        height: 100%;
-        border: 0px;
-    }
-
-    iframe {
-        height: 600px;
-    }
-
-
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+/* Mobile (320–766px) */
+@media (min-width:320px) and (max-width:766px) {
 
     html,
     body {
-        font-size: 16px;
-        min-width: 320px;
-        overflow-x: hidden;
-    }
-
-    h1 {
-        white-space: nowrap;
-        margin: 0;
-        text-align: center;
-        font-size: 44px !important;
-        padding-left: 16px;
-        padding-right: 16px;
+        font-size: 16px
     }
 
     h2 {
+        color: #9F0908;
+        font-family: Raleway, sans-serif;
         font-size: 40px;
-    }
-
-    h3 {
-        font-size: 32px;
-    }
-
-    .container-1,
-    .menu-section,
-    .find-us,
-    footer.footer {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .main-container p {
-        font-size: 16px !important;
+        font-weight: bold;
     }
 
     .logo-container {
         left: 16px;
         width: 40px;
         height: 40px;
-    }
-
-    .phone-button {
-        font-size: 16px;
+        top: 16px
     }
 
     .menu-bar {
         right: 16px;
         top: 16px;
+        gap: 16px
     }
 
     .menu-links {
-        display: none;
+        display: none
+    }
+
+    .phone-button {
+        font-size: 16px
+    }
+
+    .container-1 {
+        padding: 72px 0
     }
 
     .how-to-order {
-        text-align: center;
+        font-size: 40px;
+        margin-bottom: 24px;
+        padding: 0 16px
     }
 
     .container-order {
         flex-direction: column;
-        align-items: center;
-        gap: 32px;
-        padding-top: 72px;
+        gap: 24px;
+        padding: 24px 16px 72px
+    }
+
+    .order-step {
+        width: 100%;
+        max-width: 280px
     }
 
     .menu-section {
-        padding: 72px 16px;
-        background-size: cover;
-        background-position: center;
+        padding: 72px 16px
     }
 
     .menu-section h2 {
         font-size: 40px;
-        text-align: center;
-        margin: 0 0 40px;
-        color: #9F0908;
+        margin: 0 0 40px
     }
 
     .menu-item {
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         max-width: 343px;
-        margin: 0 auto;
-        text-align: left;
-        gap: 0;
+        margin: 0 auto 32px;
+        gap: 0
     }
 
-    .menu-item:nth-child(even) {
-        flex-direction: column;
+    .menu-section .menu-item:nth-of-type(even) {
+        flex-direction: column
     }
 
     .menu-item img {
+        width: 100%;
         max-width: 343px;
-        max-height: 343px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        margin: 0;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover
     }
 
     .menu-text {
-        padding: 0;
-        width: 100%;
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%
     }
 
     .menu-text h3 {
-        font-family: 'Economica', sans-serif;
-        font-weight: bold;
-        font-size: 32px;
-        margin: 16px 0 8px;
+        font-size: 28px;
+        margin: 16px 0 8px
     }
 
     .menu-table {
-        width: 100%;
         table-layout: fixed;
         border-collapse: separate;
-        border-spacing: 0 8px;
-    }
-
-    .menu-table td {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        border-spacing: 0 8px
     }
 
     .menu-table td:first-child {
         width: 70%;
-        font-weight: bold;
-        font-size: 24px;
+        font-size: 20px
     }
 
     .menu-table td:last-child {
         width: 30%;
-        text-align: right;
-        color: #675E54;
-        font-size: 24px;
+        font-size: 20px
     }
 
-    .menu-item+.menu-item {
-        margin-top: 32px;
+    .find-us head {
+        padding: 72px 16px 8px
     }
 
-    .find-us h2 {
-        font-size: 40px;
-        padding-top: 72px;
-        height: 100%;
+    .address-line {
+        font-size: 16px
     }
 
-    .find-us {
-        padding: 0px;
-        height: auto;
-        border: 0px;
+    .map-wrap {
+        height: 58vh
     }
 
-    .span-footer {
-        display: none;
+    footer.footer {
+        padding-left: 16px;
+        padding-right: 16px
     }
 
-    .footer-left img {
-        height: 40px;
+    .footer-logo {
         width: 40px;
-        left: 16px;
+        height: 40px
     }
 
     .footer-right img {
         width: 32px;
-        height: 32px;
-        left: 16px;
+        height: 32px
+    }
+
+    .span-footer {
+        display: none
     }
 }
